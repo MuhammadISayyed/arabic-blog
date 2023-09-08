@@ -1,6 +1,7 @@
 import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
+import getPostMetadata from '@/utils/getPostMetaData';
 
 const getPostContent = (slug) => {
   const folder = 'posts/';
@@ -9,6 +10,13 @@ const getPostContent = (slug) => {
   const matterResults = matter(content);
   return matterResults;
 };
+
+export async function generateStaticParams() {
+  const posts = getPostMetadata();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 const PostPage = (props) => {
   const slug = props.params.slug;
