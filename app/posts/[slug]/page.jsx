@@ -24,7 +24,7 @@ const PostPage = (props) => {
 
   return (
     <article className="prose lg:prose-xl flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-serif my-32">{post.data.title}</h1>
+      <h1 className="text-5xl font-serif my-32 text-cherry">{post.data.title}</h1>
       <Markdown className="text-3xl font-light max-w-prose leading-normal">{post.content}</Markdown>
     </article>
   );
