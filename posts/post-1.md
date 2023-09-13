@@ -1,5 +1,5 @@
 ---
-title: 'First Blog Post'
+title: 'هذا مقالي الأول'
 date: '2023-09-08'
 ---
 

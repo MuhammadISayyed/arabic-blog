@@ -6,7 +6,7 @@ const PostPreview = (props) => {
       <Link href={`/posts/${props.slug}`}>
         <h2>{props.title}</h2>
       </Link>
-      <p>Created At:{props.date}</p>
+      <p>نُشر في: {props.date}</p>
     </div>
   );
 };

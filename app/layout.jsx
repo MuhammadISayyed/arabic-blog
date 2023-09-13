@@ -1,5 +1,6 @@
 import './globals.css';
 import NavBar from '@/components/NavBar';
+import { aref_ruqaa, lateef } from './fonts';
 
 export const metadata = {
   title: 'My Arabic Blog',
@@ -8,10 +9,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl" className={`${aref_ruqaa.variable} ${lateef.variable}`}>
       <body>
-        <NavBar></NavBar>
-        {children}
+        <div className="container">
+          <NavBar></NavBar>
+          {children}
+        </div>
       </body>
     </html>
   );
