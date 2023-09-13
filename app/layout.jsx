@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" className={`${aref_ruqaa.variable} ${lateef.variable}`}>
       <body className="bg-offwhite text-gray-800">
-        <div className="container">
+        <div className="container relative">
           <NavBar></NavBar>
           <main>{children}</main>
         </div>
