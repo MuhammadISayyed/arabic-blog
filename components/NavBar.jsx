@@ -5,8 +5,8 @@ import '../app/globals.css';
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-center my-6">
-      <NavigationMenu>
+    <div className="flex items-center justify-center my-6 font-serif text-xl">
+      <NavigationMenu dir="rtl">
         <NavigationMenuList className="flex gap-6 w-fi">
           <Link href="/" className=" text-gray-600 hover:text-black focus:text-black">
             الرئيسية

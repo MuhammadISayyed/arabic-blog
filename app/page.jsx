@@ -1,7 +1,10 @@
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <h1>إذا المرء لم يدنس من اللؤم عرضه</h1>
-    </div>
+    <main className="flex justify-center mt-52">
+      <div className="text-3xl font-light max-w-prose leading-normal">
+        <p>إذا المرء لم يدنس من اللؤم عرضه</p>
+        <p className="mr-32">فكل رداء يرتديه جميل</p>
+      </div>
+    </main>
   );
 }
