@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <main className="flex justify-center mt-52">
-      <div className="text-3xl font-light max-w-prose leading-normal">
+      <div className="container pb-6 text-3xl font-light max-w-prose leading-normal">
         <p>
           إن المرء إذا ألزم نفسه ألا تُعرف بوظيفة أو هواية — واجه حقيقتها. تلك الحقيقة التي تغمره
           إذا ترك لخاطره مساحة يجول فيها، وإن لم يترك لها مساحة هجمت عليه في أحلامه، فذكرته بأنه لا
