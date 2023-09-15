@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             <NavBar></NavBar>
             <main>{children}</main>
           </div>
-          <footer className="font-serif text-center mt-9 tracking-wide text-2xl relative bottom-0 w-full">
+          <footer className="font-serif text-center mt-9 tracking-wide text-xl relative bottom-0 w-full">
             جميع الحقوق يحفظها خالقها
           </footer>
         </div>
