@@ -5,13 +5,33 @@ import '../app/globals.css';
 
 const NavBar = () => {
   return (
-    <NavigationMenu>
-      <NavigationMenuList className="flex gap-2">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/posts">Posts</Link>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <div className="flex items-center justify-center my-6 font-serif text-xl sticky top-4">
+      <NavigationMenu
+        dir="rtl"
+        className=" max-sm:px-3 backdrop-filter backdrop-blur-md bg-gray-300/50 px-9 py-3 rounded-full"
+      >
+        <NavigationMenuList className="flex items-center justify-center gap-7 w-fit">
+          <Link
+            href="/"
+            className="hover:text-cherry focus:text-cherry hover:underline hover:underline-offset-8"
+          >
+            الرئيسية
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-cherry focus:text-cherry hover:underline hover:underline-offset-8"
+          >
+            اعرفني
+          </Link>
+          <Link
+            href="/posts"
+            className="hover:text-cherry focus:text-cherry hover:underline hover:underline-offset-8"
+          >
+            المقالات
+          </Link>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 };
 

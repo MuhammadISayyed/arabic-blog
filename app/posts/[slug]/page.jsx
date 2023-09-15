@@ -23,12 +23,10 @@ const PostPage = (props) => {
   const post = getPostContent(slug);
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <article className="prose lg:prose-xl">
-        <Markdown>{post.content}</Markdown>
-      </article>
-    </div>
+    <article className="prose lg:prose-xl flex flex-col items-center justify-center">
+      <h1 className="text-5xl font-serif my-32 text-cherry">{post.data.title}</h1>
+      <Markdown className="text-3xl font-light max-w-prose leading-normal">{post.content}</Markdown>
+    </article>
   );
 };
 
